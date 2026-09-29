@@ -1,0 +1,22 @@
+{
+  "name": "AFL++ Ubuntu 20.04 Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "containerEnv": {
+    "AFL_SKIP_CPUFREQ": "1",
+    "AFL_I_DONT_CARE_ABOUT_PYTHON_PACKAGES": "1"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
